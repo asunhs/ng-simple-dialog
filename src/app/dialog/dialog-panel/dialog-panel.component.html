@@ -1,0 +1,6 @@
+<div *ngFor="let dialog of dialogs">
+  <div class="overlay" (click)="dialog.close(true)"></div>
+  <div class="dialog">
+    <ng-template [dl-dialog]="dialog"></ng-template>
+  </div>
+</div>
