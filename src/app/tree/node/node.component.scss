@@ -1,0 +1,15 @@
+.item {
+    cursor: pointer;
+
+    &.selected {
+        background-color: lightblue;
+    }
+}
+
+.children {
+    margin-left: 16px;
+
+    &.fold {
+        display: none;
+    }
+}

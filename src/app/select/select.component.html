@@ -1,0 +1,10 @@
+<input class="placeholder" type="text"
+  (focus)="open()"
+  (blur)="close()"
+  [value]="selected"
+  readonly/>
+<div class="options" [class.open]="isOpen">
+  <ng-content></ng-content>
+</div>
+
+

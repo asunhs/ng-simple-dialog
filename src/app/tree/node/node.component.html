@@ -1,0 +1,10 @@
+<div class="item"
+  [class.selected]="selected">
+  <span *ngIf="!isLeaf()"
+    [class.fold]="fold"
+    (click)="toggle()">{{ fold ? '+' : '-' }}</span>
+  <span (click)="select()">{{node.item.type}}</span>
+</div>
+<div class="children" [class.fold]="fold">
+  <dl-node *ngFor="let child of node.children" [node]="child"></dl-node>
+</div>

@@ -1,4 +1,17 @@
 <div>
   <h1 (click)="open()">{{title}}</h1>
+
+  <p>select box</p>
+  <dl-select>
+    <option>A</option>
+    <option>B</option>
+    <option>C</option>
+    <option>D</option>
+  </dl-select>
+
+  <p (click)="update()">tree</p>
+  <dl-tree [tree]="tree" (select)="onSelect($event)" (path)="onSelect($event)"></dl-tree>
+
+
   <dl-dialog-panel></dl-dialog-panel>
 </div>

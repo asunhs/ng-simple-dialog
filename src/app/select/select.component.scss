@@ -1,0 +1,31 @@
+$height: 20px;
+
+
+:host {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+}
+
+.placeholder {
+    height: $height;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #999;
+}
+
+.options {
+    display: none;
+    position: absolute;
+    top: $height;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-top: 0;
+
+    &.open {
+        display: block;
+    }
+}
